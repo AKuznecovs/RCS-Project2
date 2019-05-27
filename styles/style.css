@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+    background: black;
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "hero hero advert"
+      "main art sidebar"
+      "footer footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 4fr 1fr;
+    grid-gap: 10px;
+}
+
+/* Header section */
+
+    #header {
+        grid-area: header;
+        background-image: url('../img/3.jpeg');
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-areas: "brand nav tools";
+        align-items: center;
+        justify-items: center;
+    }
+
+    @media (max-width: 992px) {
+        body {
+            
+            grid-template-areas: 
+                "header header"
+                "hero hero"
+                "main ad"
+                "art art"
+                "sidebar sidebar"
+                "footer footer";
+        }
+
+        #header {
+            justify-content: center;
+            grid-template-areas:
+            "brand brand"
+            "nav tools";
+        }
+
+        #sideBar {
+            display: none;
+        }
+      }
+    
+    @media (max-width: 576px) {
+        body {
+            
+            grid-template-areas: 
+                "header"
+                "hero"
+                "main"
+                "ad"
+                "art"
+                "footer";
+        }
+
+        #header {
+            justify-content: center;
+            grid-template-areas:
+            "brand"
+            "nav"
+            "tools";
+        }
+
+    }
+
+    #brand {
+
+        grid-area: brand;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        color: white;
+
+    }
+    
+    #brand img{
+
+        width: 100px;
+        height: 100px;
+    }
+   
+    #nav {
+        grid-area: nav;
+        display: inline-block;
+        width: 100%;
+        
+        
+    }
+
+    ul {
+            
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+
+    }
+        
+    li {
+
+    float: left;
+    }
+    
+    li a {
+    font-size: 1.5em;
+    font-weight: bolder;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+    background-color: #111;
+    text-decoration: none;
+    }
+    
+    .active {
+    background-color: #4CAF50;
+    }
+
+
+
+    #tools {
+        grid-area: tools;
+    
+    }
+
+/* Hero section */
+
+#hero {
+grid-area: hero;
+      display: block;
+      align-items: center;
+}
+
+.jumbotron {
+    height: 100%;
+    
+    
+}
+
+/* Main section */
+
+#main {
+    grid-area: main;
+
+}
+
+#articleTwo {
+    grid-area: art;
+}
+
+#advert {
+    grid-area: advert;
+    
+}
+
+#advert img {
+    width: 400px;
+    height: auto;
+    
+}
+
+/* Sidebar section */
+
+#sideBar {
+    grid-area: sidebar;
+    
+    
+}
+
+
+/* Footer section */
+
+#footer {
+
+}
+
+/* Button */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 99;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background-color:  rgba(26, 18, 3, 0.3);
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(158, 77, 10);
+  }

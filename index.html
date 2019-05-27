@@ -4,12 +4,134 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" href="/styles/style.css">
-<title>Title</title>
+<title>Bootstrap 4 based Page</title>
 </head>
 <body>
 
+    <div id="header">
+      
+      <div id="brand">
+        <img src="/img/prague.png" alt="logo">
+        <h1>BRAND LOGO</h1>
+      </div>
+
+      <div id="nav">
+        <ul>
+          <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div id="tools"><button class="btn btn-primary px-4 font-weight-bold" type="button">Hey Handsome!</button></div>
+    </div>
+    
+
+    <div id="hero">
+        <div class="jumbotron">
+            <div class="container">
+              <h1 class="display-3">Bootstrap 4 Tutorials</h1>
+              <p class="lead">Bootstrap Jumbotron to highlight speciality of your wesbites.</p>
+              <hr class="m-y-md">
+              <p>Use this Feature to Display Content and Messages 
+              spanning the entire viewport.</p>
+              <p class="lead">
+                <a class="btn btn-success btn-lg" href="http://www.bootstrap-tutorials.com" role="button">Visit Now</a>
+              </p>
+            </div>
+            </div>
+    </div>
+
+    <div id="advert">
+      <img src="/img/banner.gif" alt="advert">
+    </div>
+    
+    <div id="articleFeature">
+    </div>
+
+    <div id="main">
+      <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius numquam, omnis labore vitae eum fugiat eveniet! Quas reiciendis quo error exercitationem. Quia nulla tempore nesciunt voluptatem ad eveniet odit modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate perspiciatis ea dolorem cumque. Omnis laboriosam sed blanditiis temporibus corrupti molestiae, minus asperiores, magnam repudiandae ab quia odio exercitationem adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis voluptate beatae. Illum laborum exercitationem pariatur esse culpa quaerat in deserunt veniam sequi harum! Minus aspernatur voluptates iure expedita enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta et, ad optio modi aut culpa consequuntur numquam, dolorem quae, distinctio harum eius officiis dicta qui blanditiis delectus sint sit est!</article>
+    </div>
+
+    <div id="articleTwo" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mb-3">Resize the page and see the magic.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="media border p-3 flex-column flex-md-row">
+                  <img src="https://via.placeholder.com/100x100" alt="#" class="mr-3 rounded-circle" style="width:100px;">
+                  <div class="media-body align-self-center">
+                    <h4>My Name <small><i>Posted on May 20, 2018</i></small></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel ipsum aliquam metus facilisis scelerisque. Quisque vitae condimentum nulla. Vestibulum lobortis ullamcorper augue id consequat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus at aliquet dui. Mauris dapibus lectus id laoreet iaculis. Duis auctor augue augue, eget lobortis quam auctor at.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-12">
+                <div class="media border p-3 flex-column flex-md-row">
+                  <div class="media-body align-self-center">
+                    <h4>My Name <small><i>Posted on May 20, 2018</i></small></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel ipsum aliquam metus facilisis scelerisque. Quisque vitae condimentum nulla. Vestibulum lobortis ullamcorper augue id consequat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus at aliquet dui. Mauris dapibus lectus id laoreet iaculis. Duis auctor augue augue, eget lobortis quam auctor at.</p>
+                  </div>
+                  <img src="https://via.placeholder.com/100x100" alt="#" class="ml-3 rounded-circle" style="width:100px;">
+                </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div id="sideBar" class="list-group">
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small>3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small>Donec id elit non mi porta.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
+        </a>
+      </div>
+ 
+
+<footer id="footer" class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+
+<script src="/scripts/script.js"></script>
 </body>
 </html>
