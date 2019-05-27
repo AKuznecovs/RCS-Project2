@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 html {
       text-align: justify;
-      padding: 2%;
+      padding: 1%;
 }
 body {
     background-image: url('../img/town.jpg');
@@ -11,6 +11,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        
     display: grid;
     grid-template-areas: 
       "header header header"
@@ -60,6 +61,7 @@ body {
 
         #heroCall .heroText {
             font-size: 2.5em;
+            padding: 1%;
         }
 
         #heroFeat {
@@ -91,6 +93,7 @@ body {
         #heroCall {
             font-size: 1.5em;
             min-height: 300px;
+            padding: 5px;
             
         }
 
@@ -138,21 +141,16 @@ body {
         width: 100%;
         display: inline-flex;
         justify-content: space-around;           
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.815);
-    border-radius: 10px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.815);
+        border-radius: 10px;
 
     }
         
-    li {
-
-    /* float: left; */
-    }
-    
-    li a {
+   li a {
     font-size: 1.5em;
     font-weight: bolder;
     display: inline-block;
@@ -223,12 +221,13 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto;
     justify-content: center;
+    padding: 2%;
 }
 
 .heroText {
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.699);
-    margin: 0;
+    background: rgba(211, 211, 211, 0.699);
+    /* margin: 3%; */
     text-align: center;
     font-size: 2.5em;
     font-weight: bolder;
@@ -240,10 +239,11 @@ body {
 
 .heroText p {
     margin: 0;
+    justify-items: center;
 }
 .heroBtn {
     
-    height: 50px;
+    height: 70px;
     justify-self: center;
     align-self: center;
 }
@@ -271,12 +271,19 @@ body {
 /* Main section */
 
 #artFeat {
-    background: #434343ad;
+    
     border-radius: 10px;
     grid-area: artFeat;
-    color: white;
+    color: rgb(189, 189, 189);
     font-size: 1.2em;
     padding: 15px;
+    height: auto;
+}
+
+#artFeat article {
+    background: #434343ad;
+    padding: 3%;
+    border-radius: 10px;
 }
 
 #artList {
@@ -284,7 +291,7 @@ body {
     border-radius: 10px;
     grid-area: artList;
     font-size: 1.2em;
-    color: white;
+    color: rgb(189, 189, 189);
     padding: 15px;
 }
 
@@ -305,14 +312,13 @@ body {
   padding: 15px;
   column-count: 3;
   column-gap: 45px;
-  
-  & p {
+}
+
+.newspaper p {
     margin: 0 0 15px 0;
     display: inline-block;
-    column-break-inside: avoid;
+    /* -webkit-break-inside: avoid; */
     text-align: justify;
-  }
-
 }
 
 img {
@@ -340,7 +346,7 @@ img {
     width: 300px;
     font-size: 16px;
     outline: none;
-    background: rgba(73, 26, 26, 0.541);
+    background: rgba(73, 26, 26, 0.733);
     border:0px;
     border-bottom: 1px solid #fff;
     border-radius: 5px;
@@ -378,8 +384,14 @@ img {
 #footer {
     border-radius: 10px;
     grid-area: footer;
-    width: 100%;    
+    width: 100%;
+    background: rgba(0, 0, 0, 0.774);    
 }
+
+
+
+
+
 
 
 /* Button */
