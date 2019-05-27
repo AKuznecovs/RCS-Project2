@@ -50,9 +50,7 @@ body {
             "nav tools";
         }
 
-        #sideBar {
-            display: none;
-        }
+        
       }
     
     @media (max-width: 576px) {
@@ -73,6 +71,10 @@ body {
             "brand"
             "nav"
             "tools";
+        }
+
+        #sideBar {
+            display: none;
         }
 
     }
