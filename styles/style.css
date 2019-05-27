@@ -5,8 +5,8 @@ body {
     display: grid;
     grid-template-areas: 
       "header header header"
-      "hero hero advert"
-      "main art sidebar"
+      "heroFeat heroCall advert"
+      "artFeat artList sidebar"
       "footer footer footer";
     grid-template-rows: auto;
     grid-template-columns: 2fr 4fr 1fr;
@@ -17,6 +17,7 @@ body {
 
     #header {
         grid-area: header;
+
         background-image: url('../img/3.jpeg');
         min-height: 500px;
         width: 100%;
@@ -32,12 +33,12 @@ body {
 
     @media (max-width: 992px) {
         body {
-            
+            grid-template-columns: repeat(2, 1fr);
             grid-template-areas: 
                 "header header"
-                "hero hero"
-                "main ad"
-                "art art"
+                "heroFeat heroCall"
+                "artFeat advert"
+                "artList artList"
                 "sidebar sidebar"
                 "footer footer";
         }
@@ -56,13 +57,13 @@ body {
     
     @media (max-width: 576px) {
         body {
-            
+            grid-template-columns: 1fr;
             grid-template-areas: 
                 "header"
-                "hero"
-                "main"
-                "ad"
-                "art"
+                "heroCall"
+                "artFeat"
+                "advert"
+                "artList"
                 "footer";
         }
 
@@ -97,7 +98,6 @@ body {
         grid-area: nav;
         display: inline-block;
         width: 100%;
-        
         
     }
 
@@ -136,8 +136,6 @@ body {
     background-color: #4CAF50;
     }
 
-
-
     #tools {
         grid-area: tools;
     
@@ -145,27 +143,32 @@ body {
 
 /* Hero section */
 
-#hero {
-grid-area: hero;
-      display: block;
-      align-items: center;
+#heroFeat {
+    grid-area: heroFeat;
+    background-image: url('../img/2.jpeg');
+    width: 100%;
 }
 
-.jumbotron {
-    height: 100%;
-    
-    
+#heroCall {
+    grid-area: heroCall;
+    background: whitesmoke;
+    border-radius: 10px;
+    color: black;
+    font-size: 1em;
 }
 
 /* Main section */
 
-#main {
-    grid-area: main;
-
+#artFeat {
+    grid-area: artFeat;
+    color: white;
+    font-size: 1em;
 }
 
-#articleTwo {
-    grid-area: art;
+#artList {
+    grid-area: artList;
+    font-size: 1em;
+    color: white;
 }
 
 #advert {
@@ -183,7 +186,8 @@ grid-area: hero;
 
 #sideBar {
     grid-area: sidebar;
-    
+    font-size: 1em;
+    color: white;
     
 }
 
@@ -191,7 +195,7 @@ grid-area: hero;
 /* Footer section */
 
 #footer {
-
+    grid-area: footer;
 }
 
 /* Button */
