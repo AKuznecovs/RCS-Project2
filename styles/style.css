@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab');
 html {
       text-align: justify;
       padding: 1%;
-      font-family: 'Roboto';
+      font-family: 'Roboto Slab';
 }
 body {
     background-image: url('../img/town.jpg');
