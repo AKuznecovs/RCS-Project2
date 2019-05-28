@@ -342,7 +342,7 @@ body {
 
     .newspaper {
         padding: 15px;
-        column-count: 2; /* Adjust columns*/
+        column-count: 1; /* Adjust columns*/
         column-gap: 45px;
         height: 100%;
         width: auto;
@@ -398,12 +398,12 @@ body {
         cursor: pointer;
         margin: 0 auto;
         font-family: 'Open Sans', sans-serif;
-        -webkit-transition-duration: 0.9s;
+        transition-duration: 0.9s;
         transition-duration: 0.9s;
     }
 
     .mail-form-agile input[type="submit"]:hover {
-        -webkit-transition-duration: 0.9s;
+        transition-duration: 0.9s;
         transition-duration: 0.9s;
         background:rgba(91, 157, 214, 0.76);
         
