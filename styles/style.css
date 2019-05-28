@@ -6,6 +6,28 @@ html {
     font-family: 'Roboto Slab', 'Sans Seriff';
 }
 
+/* Body section */
+
+body {
+    margin: auto;
+    background-image: url('../img/town.jpg');
+    height: 1200px;    
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "heroFeat heroCall advert"
+    "artFeat artList sidebar"
+    ". footer .";
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 4fr 1fr;
+    grid-gap: 10px;
+}
+
 /* Media queries */
 
     @media (max-width: 1024px) {
@@ -102,27 +124,7 @@ html {
         }
     }
 
-/* Body section */
 
-    body {
-        margin: auto;
-        background-image: url('../img/town.jpg');
-        height: 1200px;    
-        width: 100%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "heroFeat heroCall advert"
-        "artFeat artList sidebar"
-        ". footer .";
-        grid-template-rows: auto;
-        grid-template-columns: 2fr 4fr 1fr;
-        grid-gap: 10px;
-    }
 
 /* Header section */
 
