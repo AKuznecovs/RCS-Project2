@@ -432,7 +432,7 @@ html {
     #myBtn {
         display: none;
         position: fixed;
-        bottom: 10%;
+        bottom: 5%;
         right: 5%;
         z-index: 99;
         font-size: 28px;
