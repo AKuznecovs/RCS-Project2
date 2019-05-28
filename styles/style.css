@@ -3,7 +3,7 @@
 html {
     text-align: justify;
     padding: 1%;
-    font-family: 'Roboto Slab', 'Sans Seriff';
+    font-family: 'Roboto Slab', serif, 'Sans Seriff';
 }
 
 /* Body section */
