@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html {
       text-align: justify;
       padding: 1%;
+      font-family: 'Roboto';
 }
 body {
     background-image: url('../img/town.jpg');
     height: 1200px;    
     width: 100%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-areas: 
       "header header header"
@@ -27,17 +27,13 @@ body {
 
     #header {
         grid-area: header;
-        /* background-image: url('../img/3.jpeg'); */
-        min-height: 500px;
+        min-height: 400px;
         width: 100%;
-        /* background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; */
+        padding-top: 3%;
         display: grid;
         grid-template-areas: "brand nav tools";
-        align-items: center;
-        justify-items: center;
+        align-content: baseline; 
+        justify-content: center;
     }
 
     @media (max-width: 992px) {
@@ -114,6 +110,10 @@ body {
         }
         #advert {
             height: 800px;
+        }
+
+        #tools {
+            margin-top: 20px;
         }
     }
 
