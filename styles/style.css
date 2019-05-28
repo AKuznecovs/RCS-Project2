@@ -27,13 +27,13 @@ body {
 
     #header {
         grid-area: header;
-        background-image: url('../img/3.jpeg');
+        /* background-image: url('../img/3.jpeg'); */
         min-height: 500px;
         width: 100%;
-        background-attachment: fixed;
+        /* background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
         display: grid;
         grid-template-areas: "brand nav tools";
         align-items: center;
@@ -72,6 +72,10 @@ body {
             margin-left: 20px;
         }
         
+        #sideBar {
+            display: flex;
+            justify-content: center;
+        }
       }
     
     @media (max-width: 576px) {
@@ -198,8 +202,7 @@ body {
 #heroFeat {
     border-radius: 10px;
     grid-area: heroFeat;
-    background-image: url('../img/banner.gif');
-    height: auto;
+    background-image: url('../img/1.jpeg');
     
     background-repeat: no-repeat;
         background-size: cover;
@@ -221,19 +224,18 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto;
     justify-content: center;
-    padding: 2%;
+    align-content: center;
 }
 
 .heroText {
-    border-radius: 10px;
-    background: rgba(211, 211, 211, 0.699);
-    /* margin: 3%; */
+
     text-align: center;
     font-size: 2.5em;
     font-weight: bolder;
-    color: white;
+    color: rgb(235, 226, 226);
     justify-self: center;
     align-self: center;
+    height: 100%;
     
 }
 
@@ -312,6 +314,8 @@ body {
   padding: 15px;
   column-count: 3;
   column-gap: 45px;
+  height: 100%;
+  width: auto;
 }
 
 .newspaper p {
@@ -336,33 +340,32 @@ img {
 #sideBar {
    
     grid-area: sidebar;
-    margin-top: 5%;
+    
     
     
 }
 
 .mail-form-agile input[type="text"], .mail-form-agile input[type="password"] {
     padding: 13px 10px;
-    width: 300px;
+    width: 250px;
     font-size: 16px;
     outline: none;
     background: rgba(73, 26, 26, 0.733);
-    border:0px;
+    border: 2px solid whitesmoke;
     border-bottom: 1px solid #fff;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1.6px;
     color:#fff;
     display: block;
-    justify-content: center;
-    text-align: center;
+    
     }
     
     .mail-form-agile input[type="submit"]{
     font-size: 1.3em;
     padding: 10px 20px;
     letter-spacing: 1.2px;
-    border: none;
+    border-radius: 10px;
     text-transform: capitalize;
     outline: none;
     background: rgb(2, 49, 71);
