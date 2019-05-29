@@ -104,6 +104,7 @@ body {
 
         #header {
             justify-content: center;
+            grid-template-columns: 1fr;
             grid-template-areas:
             "brand"
             "nav"
