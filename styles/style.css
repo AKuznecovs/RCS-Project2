@@ -46,6 +46,7 @@ body {
         #header {
             padding-top: 5%;
             justify-content: center;
+            display: grid;
             grid-template-areas:
             "brand nav tools";
         }
@@ -104,6 +105,7 @@ body {
 
         #header {
             justify-content: center;
+            display: grid;
             grid-template-columns: 1fr;
             grid-template-areas:
             "brand"
