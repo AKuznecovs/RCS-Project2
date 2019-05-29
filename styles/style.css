@@ -30,7 +30,7 @@ body {
 
 /* Media queries */
 
-    @media (max-width: 1024px) {
+    @media (max-width: 992px) {
         body {
             grid-template-columns: 2fr 1fr;
             grid-template-areas: 
@@ -134,7 +134,7 @@ body {
         display: grid;
         grid-template-areas: "brand nav tools";
         align-content: baseline; 
-        justify-content: space-around;
+        justify-content: center;
     }
 
     
