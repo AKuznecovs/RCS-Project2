@@ -44,7 +44,6 @@ body {
         }
 
         #header {
-            padding-top: 5%;
             justify-content: center;
             display: grid;
             grid-template-areas:
@@ -133,7 +132,6 @@ body {
         grid-area: header;
         min-height: 400px;
         width: 100%;
-        /* padding-top: 3%; */
         display: grid;
         grid-template-areas: "brand nav tools";
         align-content: baseline; 
