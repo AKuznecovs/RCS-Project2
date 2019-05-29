@@ -28,106 +28,6 @@ body {
     grid-gap: 10px;
 }
 
-/* Media queries */
-
-    @media (max-width: 992px) {
-        body {
-            grid-template-columns: 2fr 1fr;
-            grid-template-areas: 
-                "header header"
-                "heroFeat heroFeat"
-                "heroCall heroCall"
-                "artFeat advert"
-                "artList artList"
-                "sidebar sidebar"
-                "footer footer";
-        }
-
-        #header {
-            justify-content: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas:
-            "brand nav tools";
-        }
-
-        #brand img {
-            display: none;
-        }
-
-        #heroCall .heroText {
-            font-size: 2.5em;
-            padding: 1%;
-        }
-
-        #heroFeat {
-            min-height: 400px;
-        }
-
-        #artList .newspaper {
-            column-count: 1;
-        }
-
-        #tools {
-            margin-left: 20px;
-        }
-        
-        #sideBar {
-            display: flex;
-            justify-content: center;
-        }
-    }
-
-    @media (max-width: 576px) {
-        body {
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-                "header"
-                "heroCall"
-                "artFeat"
-                "advert"
-                "artList"
-                "footer";
-        }
-
-        #brand {
-            text-align: center;
-        }
-
-        #artList .newspaper {
-            column-count: 1;
-        }
-
-        #heroCall {
-            font-size: 1.5em;
-            min-height: 300px;
-        }
-
-        #header {
-            
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas:
-            "brand"
-            "nav"
-            "tools";
-        }
-
-        #sideBar {
-            display: none;
-        }
-        #advert {
-            height: 800px;
-        }
-
-        #tools {
-            margin-top: 20px;
-        }
-    }
-
-
-
 /* Header section */
 
     #header {
@@ -225,6 +125,104 @@ body {
         background: #83838396;
         border-color: #f6b93b;
         transition: all 0.4s ease 0s;
+    }
+
+/* Media queries */
+
+    @media (max-width: 992px) {
+        body {
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: 
+                "header header"
+                "heroFeat heroFeat"
+                "heroCall heroCall"
+                "artFeat advert"
+                "artList artList"
+                "sidebar sidebar"
+                "footer footer";
+        }
+
+        #header {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "brand nav tools";
+        }
+
+        #brand img {
+            display: none;
+        }
+
+        #heroCall .heroText {
+            font-size: 2.5em;
+            padding: 1%;
+        }
+
+        #heroFeat {
+            min-height: 400px;
+        }
+
+        #artList .newspaper {
+            column-count: 1;
+        }
+
+        #tools {
+            margin-left: 20px;
+        }
+        
+        #sideBar {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 576px) {
+        body {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "header"
+                "heroCall"
+                "artFeat"
+                "advert"
+                "artList"
+                "footer";
+        }
+
+        #brand {
+            text-align: center;
+        }
+
+        #artList .newspaper {
+            column-count: 1;
+        }
+
+        #heroCall {
+            font-size: 1.5em;
+            min-height: 300px;
+        }
+
+        #header {
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "brand"
+            "nav"
+            "tools";
+        }
+
+        #sideBar {
+            display: none;
+        }
+        #advert {
+            height: 800px;
+        }
+
+        #tools {
+            margin-top: 20px;
+        }
     }
 
 /* Hero section */
